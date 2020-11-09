@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffffff;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: Black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #f1f1f1;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="C:\Users\yazdk\Documents\XYZ\XYZ Application\XYZ_application\screens\HomeScreen.html"><Font color="#ED1C24">Home</font></a>
+  <a href="#"><Font color="#FFD503">About Us</font></a>
+  <a href="C:\Users\yazdk\Documents\XYZ\XYZ Application\XYZ_application\screens\DonorScreen.html"><Font color="#0072BC">Donor</font></a>
+  <a href="C:\Users\yazdk\Documents\XYZ\XYZ Application\XYZ_application\screens\MembersScreen.html"><Font color="#ED1C24">Members</font></a>
+  <a href="C:\Users\yazdk\Documents\XYZ\XYZ Application\XYZ_application\screens\VolunteersScreen.html"><Font color="#FFD503">Volunteers</font></a>
+  <a href="C:\Users\yazdk\Documents\XYZ\XYZ Application\XYZ_application\screens\SeniorsScreen.html"><Font color="#0072BC">Seniors</font></a>
+  <a href="C:\Users\yazdk\Documents\XYZ\XYZ Application\XYZ_application\screens\ContactUs.html"><Font color="#ED1C24">Contact</font></a>
+  <a href="#"><Font color="#FFD503">Games</font></a>
+  <a href="#">Points Table</a>
+  <a href="C:\Users\yazdk\Documents\XYZ\XYZ Application\XYZ_application\screens\Themes.html">Themes</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <br/>
+  <img src="C:/Users/yazdk/Documents/XYZ/XYZ Application/XYZ_application/assets/xyz-logo-1.png"/>
+  <br/>
+  <h1>Ketayun’s Conquerors</h1>
+  <br/>
+  <img src="C:/Users/yazdk/Documents/XYZ/XYZ Application/XYZ_application/assets/KC.jpg">
+  <br/>
+  Ketayun’s Conquerors is made
+  up the girls from the boarding
+  section of the Bai Ava Bai
+  Framji Petit School. An
+  extremely energized and hands
+  on group with a competitive
+  spirit. They have been winners
+  of the Best XYZ Group Award
+  twice in the last 5 years. Being
+  boarders, most of the activities
+  happen within the premises of
+  the school. The girls themselves
+  take care of pets, do gardening,
+  come up with amazing
+  entrepreneurial ideas such
+  as mehendi, painting canvas,
+  dancing for a show etc.
+  They learn Gujarati and Prayers
+  from their teachers and also
+  learn a lot about the
+  Zoroastrian religion from
+  our Mobeds.
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>

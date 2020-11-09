@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: "#000000";
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffffff;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: "black";
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #f1f1f1;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick = "closeNav()">×</a>
+  <a href="#" style="color:#ED1C24">Home</a>
+  <a href="#" style="color:#FFD503">About Us</a>
+  <a href="#" style="color:#0072BC">Donor</a>
+  <a href="#" style="color:#ED1C24">Members</a>
+  <a href="#" style="color:#FFD503">Volunteers</a>
+  <a href="#" style="color:#0072BC">Seniors</a>
+  <a href="#" style="color:#ED1C24">Contact</a>
+  <a href="#" style="color:#FFD503">Themes</a>
+  <a href="#" style="color:#000000">Games</a>
+  <a href="#" style="color:#000000;">Points Table</a>
+  
+</div>
+
+<div id="main">
+  <button class="openbtn" onClick="openNav()">☰ </button>
+            <br/>
+            <Image src="../assets/xyz-logo-1.png"/>
+            <br/>
+            <h1>Contact Us</h1>
+            <br/>
+            <input type="text" value="Your Name"/>
+            <br/>
+            <br/>
+            <input type="text" value="Your Email"/>
+            <br/>
+            <br/>
+            <input type="text" value="Your Message"/>
+            <br/>
+            <br/>
+            <button onClick="send()">Send</button>
+
+            <script>
+              function send(){
+                alert("Your message has been received by XYZ Foundation\nOne of our volunteers will contact you as soon as possible.")
+              }
+          </script>
+          <br/>
+          <br/>
+            Contact:<br/>
+            XYZ Foundation, Thakker Building, 1st floor,<br/> 
+            Champsi Bhimji Road, Mazgaon, Mumbai,<br/>
+            Maharashtra, India 400010<br/>
+            <br/>
+            +919820683398<br/>
+            +919821349283<br/>
+            <br/>
+            info@xyzfoundation.net
+</script>
+</div>
+<br/>
+<script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</head>
+</body>
+</html> 
